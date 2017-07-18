@@ -3,8 +3,8 @@ package com.silatsaktistudios.loghelper
 public class LogHelper {
 	
 	public static String getLogTag() {
-		StackTraceElement ste = new Exception().getStackTrace()[1];
-		return ste.getClassName() + "." + ste.getMethodName();
+		StackTraceElement stackTraceElement = new Exception().getStackTrace()[1];
+		return stackTraceElement.getClassName() + "." + stackTraceElement.getMethodName();
 	}
 
 	public static void logThrowable(Throwable t) {
