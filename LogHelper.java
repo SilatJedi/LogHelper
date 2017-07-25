@@ -3,7 +3,7 @@ package com.silatsaktistudios.loghelper
 public class LogHelper {
 	
 	public static String getLogTag() {
-		StackTraceElement stackTraceElement = new Exception().getStackTrace()[1];
+		StackTraceElement stackTraceElement = new Exception().getStackTrace()[2];
 		return stackTraceElement.getClassName() + "." + stackTraceElement.getMethodName();
 	}
 
