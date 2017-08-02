@@ -4,7 +4,7 @@ public class LogHelper {
 	
 	public static String getLogTag() {
 		StackTraceElement stackTraceElement = new Exception().getStackTrace()[2];
-		return stackTraceElement.getClassName() + "." + stackTraceElement.getMethodName();
+		return ste.getClassName() + "." + ste.getMethodName() +" line #" + ste.getLineNumber();
 	}
 
 	public static void logThrowable(Throwable t) {
